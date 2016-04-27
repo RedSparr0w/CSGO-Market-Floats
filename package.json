@@ -1,0 +1,54 @@
+{
+  "name": "CSGO-market-floats",
+  "version": "1.0.0",
+  "description": "CSGO Market Floats",
+  "author": {
+    "name": "redsparr0w",
+	"steam": "http://steamcommunity.com/id/redsparr0w",
+	"github": "https://github.com/RedSparr0w"
+  },
+  "maintainers": [
+    {
+      "name": "redsparr0w",
+      "email": "admin@redsparr0w.com"
+    }
+  ],
+  "bugs": {
+    "email": "admin@redsparr0w.com",
+    "url": "https://github.com/RedSparr0w/csgo-hud/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RedSparr0w/CSGO-Market-Floats.git"
+  },
+  "homepage": "http://redsparr0w.com",
+  "dependencies": {	
+    "globaloffensive": "latest",
+    "steam-user": "latest"
+  },
+  "devDependencies": {
+  },
+  "license": "MIT",
+  "scripts" : { 
+    "start" : "nwbuild -v v0.12.3 -r \"./\"",
+	"preinstall": "npm list nw-builder -g || npm install nw-builder -g",
+	"build": "nwbuild -v v0.12.3 -o \"../builds\" -p win64,win32 --winIco \"./logo.ico\" \"./\""
+  },
+  "main": "floats.html",
+  "chromium-args": "--data-path='./data/'",
+  "window": {
+    "title": "CSGO Market Floats",
+    "icon": "logo.png",
+    "toolbar": false,
+    "frame": false,
+	"width": 350,
+	"resizable": true,
+    "position": "left",
+    "min_height": 450,
+    "min_width": 350,
+    "max_width": 350
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
