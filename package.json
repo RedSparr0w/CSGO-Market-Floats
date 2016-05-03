@@ -1,6 +1,6 @@
 {
   "name": "CSGO-market-floats",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CSGO Market Floats",
   "author": {
     "name": "redsparr0w",
@@ -19,12 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RedSparr0w/CSGO-Market-Floats.git"
+    "url": "https://github.com/RedSparr0w/csgo-market-floats.git"
   },
   "homepage": "http://redsparr0w.com",
   "dependencies": {	
-    "globaloffensive": "latest",
-    "steam-user": "latest"
   },
   "devDependencies": {
   },
